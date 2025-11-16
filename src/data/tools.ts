@@ -223,6 +223,15 @@ export const devKits: DevKit[] = [
     url: 'https://imgur.com/',
     category: 'tools',
     tags: [ 'images', 'sharing', 'hosting']
+  },
+  {
+    id: '26',
+    name: 'Notion',
+    description: 'Herramienta todo-en-uno para organizar notas, documentos, tareas y bases de datos.',
+    logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png',
+    url: 'https://notion.com/',
+    category: 'tools',
+    tags: [ 'notes', 'docs', 'productivity']
   }
 
 
