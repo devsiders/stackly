@@ -63,17 +63,6 @@ const DevKitGalaxy = () => {
           onCategoryChange={setActiveCategory}
         />
 
-        <div className="text-center mb-8">
-          <p className="text-gray-600">
-            {filteredKits.length} recursos encontrados
-            {activeCategory !== 'all' && (
-              <span className="ml-1">
-                en {activeCategory === 'libraries' ? 'Librerías' : activeCategory === 'icons' ? 'Iconos' : activeCategory === 'fonts' ? 'Fuentes' : activeCategory === 'tools' ? 'Herramientas' : ''}
-              </span>
-            )}
-          </p>
-        </div>
-
         {filteredKits.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {paginatedKits.map((kit) => (
