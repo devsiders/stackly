@@ -119,7 +119,7 @@ export const devKits: DevKit[] = [
     id: '13',
     name: 'Motion',
     description: 'Librería de animaciones para JavaScript, React y Vue.',
-    logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://imgur.com/a/nuUY8XO',
+    logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://framerusercontent.com/images/3aQX5dnH5Yqgsn98QXKF2ZXxIE.png',
     url: 'https://www.motion.dev/',
     category: 'libraries',
     tags: ['animation', 'react', 'vue']
