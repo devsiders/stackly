@@ -26,7 +26,7 @@ export const devKits: DevKit[] = [
       logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://images.seeklogo.com/logo-png/44/1/bubble-icon-logo-png_seeklogo-448116.png',
       url: 'https://www.bubble.com/',
       category: 'nocode',
-      tags: ['no-code', 'app-builder', 'database', 'web-app']
+      tags: ['no-code', 'app-builder', 'database']
     },
     {
       id: '4',
