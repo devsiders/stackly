@@ -232,7 +232,17 @@ export const devKits: DevKit[] = [
     url: 'https://notion.com/',
     category: 'tools',
     tags: [ 'notes', 'docs', 'productivity']
+  },
+  {
+    id: '27',
+    name: 'Canva',
+    description: 'Herramienta para crear diseños, presentaciones y contenido profesional fácilmente.',
+    logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://canva.com/favicon.ico',
+    url: 'https://www.canva.com/',
+    category: 'tools',
+    tags: ['design', 'templates', 'drag-drop']
   }
+
 
 
 
