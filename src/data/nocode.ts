@@ -3,53 +3,62 @@ import { DevKit } from "../types/devKits";
 export const devKits: DevKit[] = [
     {
       id: '1',
-      name: 'Framer',
-      description: 'Plataforma no-code/low-code para crear interfaces, prototipos y animaciones avanzadas de forma rápida. Ideal para UX/UI y componentes responsive.',
-      logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://cdn.worldvectorlogo.com/logos/framer-1.svg',
-      url: 'https://www.framer.com/',
-      category: 'nocode',
-      tags: ['ui', 'ux', 'animation', 'no-code']
-    },
-    {
-      id: '2',
-      name: 'Webflow',
-      description: 'Plataforma no-code para crear sitios web profesionales con control total de diseño, animaciones avanzadas, SEO optimizado y un CMS integrado para contenido dinámico.',
-      logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://dhygzobemt712.cloudfront.net/Mark/Mark_Logo_Blue.svg',
-      url: 'https://www.webflow.com/',
-      category: 'nocode',
-      tags: ['animations', 'no-code', 'cms', 'website-builder']
-    },
-    {
-      id: '3',
       name: 'Bubble',
-      description: 'Plataforma no-code para crear aplicaciones web completas con base de datos integrada, lógica mediante workflows y edición visual.',
+      description: 'Crea apps web completas sin código con base de datos y workflows visuales.',
       logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://images.seeklogo.com/logo-png/44/1/bubble-icon-logo-png_seeklogo-448116.png',
       url: 'https://www.bubble.com/',
       category: 'nocode',
       tags: ['no-code', 'app-builder', 'database']
     },
     {
-      id: '4',
+      id: '2',
       name: 'Carrd',
-      description: 'Constructor no-code rápido y minimalista para crear páginas web como una landing pages.',
+      description: 'Crea sitios web de una sola sección y landing pages sin código.',
       logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://carrd.co/assets/docs/images/brand/png/icon-color.png',
       url: 'https://www.carrd.co/',
       category: 'nocode',
       tags: ['no-code', 'website-builder', 'responsive']
     },
     {
+      id: '3',
+      name: 'FlutterFlow',
+      description: 'Crea aplicaciones móviles y web en Flutter sin código, con diseño responsive e integraciones.',
+      logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://cdn.prod.website-files.com/66b33f0fd430d8b41d25ad4c/6835d29a251b128df4ca1e20_favicon-35.jpg',
+      url: 'https://www.flutterflow.com/',
+      category: 'nocode',
+      tags: ['no-code', 'app-builder', 'mobile-app', 'flutter']
+    },
+    {
+      id: '4',
+      name: 'Framer',
+      description: 'Crea interfaces, prototipos y animaciones avanzadas sin código, ideal para UX/UI y diseño responsive.',
+      logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://cdn.worldvectorlogo.com/logos/framer-1.svg',
+      url: 'https://www.framer.com/',
+      category: 'nocode',
+      tags: ['ui', 'ux', 'animation', 'no-code']
+    },
+    {
       id: '5',
+      name: 'Webflow',
+      description: 'Crea sitios web profesionales sin código con diseño avanzado, SEO y CMS integrado.',
+      logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://dhygzobemt712.cloudfront.net/Mark/Mark_Logo_Blue.svg',
+      url: 'https://www.webflow.com/',
+      category: 'nocode',
+      tags: ['animations', 'no-code', 'cms', 'website-builder']
+    },
+    {
+      id: '6',
       name: 'Wix',
-      description: 'Plataforma no-code con editor drag & drop, cientos de plantillas profesionales, hosting incluido y herramientas integradas para crear sitios web fácilmente.',
+      description: 'Crea sitios web fácilmente con editor drag & drop, plantillas y hosting incluido.',
       logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Wix.com_website_logo.svg/1280px-Wix.com_website_logo.svg.png',
       url: 'https://www.wix.com/',
       category: 'nocode',
       tags: ['no-code', 'website-builder', 'drag-drop']
     },
     {
-      id: '6',
+      id: '7',
       name: 'WordPress',
-      description: 'Plataforma no-code altamente flexible con miles de plugins y themes que permiten crear blogs, tiendas, portafolios y sitios complejos sin necesidad de programar.',
+      description: 'Crea blogs, tiendas y sitios web complejos sin código gracias a miles de plugins y temas.',
       logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://upload.wikimedia.org/wikipedia/commons/9/98/WordPress_blue_logo.svg',
       url: 'https://www.wordpress.com/',
       category: 'nocode',
