@@ -31,7 +31,7 @@ export const devKits: DevKit[] = [
     {
       id: '4',
       name: 'Carrd',
-      description: 'Constructor no-code rápido y minimalista para crear páginas web de una sola sección o landing pages.',
+      description: 'Constructor no-code rápido y minimalista para crear páginas web como una landing pages.',
       logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://carrd.co/assets/docs/images/brand/png/icon-color.png',
       url: 'https://www.carrd.co/',
       category: 'nocode',
