@@ -22,7 +22,7 @@ export const devKits: DevKit[] = [
     {
       id: '3',
       name: 'FlutterFlow',
-      description: 'Crea aplicaciones móviles y web en Flutter sin código, con diseño responsive e integraciones.',
+      description: 'Crea apps móviles y web en Flutter sin código, con diseño responsive e integraciones.',
       logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://cdn.prod.website-files.com/66b33f0fd430d8b41d25ad4c/6835d29a251b128df4ca1e20_favicon-35.jpg',
       url: 'https://www.flutterflow.com/',
       category: 'nocode',
