@@ -90,7 +90,17 @@ export const devKits: DevKit[] = [
       url: 'https://www.wordpress.com/',
       category: 'nocode',
       tags: ['no-code', 'cms', 'website-builder']
+    },
+    {
+      id: '11',
+      name: 'Google Sites',
+      description: 'Crea sitios web sencillo y gratuito en Google, ideal para páginas informativas, portafolios y proyectos rápidos.',
+      logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Google_Sites_2020_Logo.svg/873px-Google_Sites_2020_Logo.svg.png',
+      url: 'https://sites.google.com/',
+      category: 'nocode',
+      tags: ['no-code', 'website-builder', 'google']
     }
+
     
 
 
