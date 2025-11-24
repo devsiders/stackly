@@ -99,6 +99,15 @@ export const devKits: DevKit[] = [
       url: 'https://sites.google.com/',
       category: 'nocode',
       tags: ['no-code', 'website-builder', 'google']
+    },
+    {
+      id: '12',
+      name: 'WeWeb',
+      description: 'Crea apps web completas sin código con base de datos y workflows visuales.',
+      logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://cdn.prod.website-files.com/62e9199d4976608473849e5a/67fd2d8f6fbee43ca082876d_weweb-favicon-32.png',
+      url: 'https://www.weweb.io/',
+      category: 'nocode',
+      tags: ['no-code', 'app-builder', 'database']
     }
 
     
