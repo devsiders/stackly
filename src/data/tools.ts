@@ -50,7 +50,7 @@ export const devKits: DevKit[] = [
     id: '6',
     name: 'ManyPixels',
     description: 'Herramienta de ilustraciones SVG y PNG gratuitas para web',
-    logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://www.manypixels.co/favicon.ico',
+    logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://cdn.prod.website-files.com/63a9cb71c629474d4ae334b9/63ac68e5916d9b5c5a24a999_Favicon%201.png',
     url: 'https://www.manypixels.co/',
     category: 'icons',
     tags: ['illustrations', 'svg', 'png', 'design']
