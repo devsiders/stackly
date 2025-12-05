@@ -24,7 +24,6 @@ export const devKits: DevKit[] = [
     id: '3',
     name: 'Foundation',
     description: 'Framework responsive avanzado para construir sitios web y correos HTML.',
-    // No tiene logo en tu JSON original
     url: 'https://get.foundation',
     github: 'https://github.com/foundation/foundation-sites',
     category: 'libraries',
@@ -216,12 +215,33 @@ export const devKits: DevKit[] = [
     id: '23',
     name: 'Zustand',
     description: 'Líbreria ligera y rápida para manejo de estado en React.',
-    logo: 'https://zustand-demo.pmnd.rs/favicon.ico',
+    logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://zustand-demo.pmnd.rs/favicon.ico',
     url: 'https://zustand-demo.pmnd.rs/',
     github: 'https://github.com/pmndrs/zustand',
     category: 'libraries',
     tags: ['state', 'react', 'store']
+  },
+  {
+    id: '24',
+    name: 'Animate.css',
+    description: 'Librería de animaciones CSS.',
+    logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://animate.style/img/favicon.ico',
+    url: 'https://animate.style/',
+    github: 'https://github.com/animate-css/animate.css',
+    category: 'libraries',
+    tags: ['css', 'animations', 'library']
+  },
+  {
+    id: '25',
+    name: 'Hover.css',
+    description: 'Colección de animaciones hover para enlaces y botones.',
+    url: 'https://ianlunn.github.io/Hover/',
+    github: 'https://github.com/IanLunn/Hover',
+    category: 'libraries',
+    tags: ['css', 'animation', 'effects']
   }
+
+
 
 
 
