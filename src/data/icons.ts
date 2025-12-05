@@ -135,7 +135,47 @@ export const devKits: DevKit[] = [
     url: 'https://www.flaticon.com/',
     category: 'icons',
     tags: ['icons', 'design', 'svg']
+  },
+  {
+    id: '15',
+    name: 'Iconsax',
+    description: 'Colección moderna de iconos outline y bold para interfaces.',
+    logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://iconsax.io/favicon.ico',
+    url: 'https://iconsax.io/',
+    category: 'icons',
+    tags: ['icons', 'ui', 'design']
+  },
+  {
+    id: '16',
+    name: 'Hugeicons',
+    description: 'Biblioteca de iconos premium y gratuitos para diseño UI.',
+    logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://hugeicons.com/favicon.ico',
+    url: 'https://hugeicons.com/',
+    category: 'icons',
+    tags: ['icons', 'ui', 'design']
+  },
+  {
+    id: '17',
+    name: 'Untitled UI Icons',
+    description: 'Pack de iconos limpios y consistentes para interfaces modernas.',
+    logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://cdn.prod.website-files.com/636496d3f0ebfdaba9784655/6708848510bc3d367ad6d289_favicon-32px.png',
+    url: 'https://www.untitledui.com/icons/',
+    category: 'icons',
+    tags: ['icons', 'ui', 'design']
+  },
+  {
+    id: '18',
+    name: '7000 Free UI Icons',
+    description: 'Colección gratuita de más de 7000 iconos para diseño UI.',
+    logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://iconscout.com/favicon.ico',
+    url: 'https://iconscout.com/free-icons/ui',
+    category: 'icons',
+    tags: ['icons', 'ui', 'design']
   }
+
+
+
+
 
 
 ];
