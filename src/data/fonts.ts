@@ -96,7 +96,18 @@ export const devKits: DevKit[] = [
     url: 'https://www.theleagueofmoveabletype.com/',
     category: 'fonts',
     tags: ['fonts', 'open-source', 'typography']
+  },
+  {
+    id: '12',
+    name: 'Typetester',
+    description: 'Herramienta online para comparar y probar tipografías en tiempo real.',
+    logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://www.typetester.org/favicon.ico',
+    url: 'https://www.typetester.org/',
+    category: 'fonts',
+    tags: ['fonts', 'typography', 'font-testing']
   }
+
+
 
 
 ];
