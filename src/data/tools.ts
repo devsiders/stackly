@@ -129,7 +129,7 @@ export const devKits: DevKit[] = [
     id: '15',
     name: 'Formspree',
     description: 'Plataforma que permite recibir formularios sin necesidad de backend',
-    logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://formspree.io/img/formspree-new.svg',
+    logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://formspree.io/img/formspree-logo-no-text.svg',
     url: 'https://formspree.io',
     category: 'tools',
     tags: ['forms', 'backend', 'email', 'serverless']
@@ -241,7 +241,28 @@ export const devKits: DevKit[] = [
     url: 'https://www.canva.com/',
     category: 'tools',
     tags: ['design', 'templates', 'drag-drop']
+  },
+  {
+    id: '28',
+    name: 'CodeSandbox',
+    description: 'Herramienta online para crear y compartir entornos de desarrollo.',
+    logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://codesandbox.io/favicon.ico',
+    url: 'https://codesandbox.io/',
+    github: 'https://github.com/codesandbox',
+    category: 'tools',
+    tags: ['playground', 'web-development', 'editor']
+  },
+  {
+    id: '29',
+    name: 'CodePen',
+    description: 'Editor online para crear, probar y mostrar código front-end.',
+    logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://codepen.io/favicon.ico',
+    url: 'https://codepen.io/',
+    category: 'tools',
+    tags: ['playground', 'frontend', 'editor']
   }
+
+
 
 
 
