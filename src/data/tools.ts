@@ -260,7 +260,17 @@ export const devKits: DevKit[] = [
     url: 'https://codepen.io/',
     category: 'tools',
     tags: ['playground', 'frontend', 'editor']
+  },
+  {
+    id: '30',
+    name: 'W3C Markup Validator',
+    description: 'Herramienta oficial para validar código HTML y XHTML.',
+    logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://validator.w3.org/favicon.ico',
+    url: 'https://validator.w3.org/',
+    category: 'tools',
+    tags: ['validator', 'html', 'web-development']
   }
+
 
 
 
