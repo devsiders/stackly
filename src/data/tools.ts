@@ -269,7 +269,27 @@ export const devKits: DevKit[] = [
     url: 'https://validator.w3.org/',
     category: 'tools',
     tags: ['validator', 'html', 'web-development']
+  },
+  {
+    id: '31',
+    name: 'Animista',
+    description: 'Generador online de animaciones CSS personalizadas.',
+    logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://animista.net/favicon.ico',
+    url: 'https://animista.net/',
+    category: 'tools',
+    tags: ['css', 'animations', 'generator']
+  },
+  {
+    id: '32',
+    name: 'LottieFiles',
+    description: 'Plataforma para animaciones Lottie listas para usar.',
+    logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://lottiefiles.com/favicon.ico',
+    url: 'https://lottiefiles.com/',
+    category: 'tools',
+    tags: ['lottie', 'animations', 'design']
   }
+
+
 
 
 
