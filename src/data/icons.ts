@@ -131,7 +131,7 @@ export const devKits: DevKit[] = [
     id: '14',
     name: 'Flaticon',
     description: 'La mayor base de datos de iconos gratuitos. Más de 9 millones de iconos en PNG, SVG, EPS, PSD y BASE 64.',
-    logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://www.flaticon.com/favicon.ico',
+    logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://media.flaticon.com/dist/min/img/logos/flaticon-color-negative.svg',
     url: 'https://www.flaticon.com/',
     category: 'icons',
     tags: ['icons', 'design', 'svg']
