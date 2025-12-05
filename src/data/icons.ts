@@ -80,7 +80,7 @@ export const devKits: DevKit[] = [
   },
   {
     id: '9',
-    name: 'Material Symbols',
+    name: 'Material Icons',
     description: 'Íconos oficiales de Google Material Design.',
     logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://assets.ycodeapp.com/assets/app30559/images/1B3akDclRu7Jls07LoYqJHF6nxeou3LhJOZfCGU2-published.webp',
     url: 'https://fonts.google.com/icons',
@@ -126,6 +126,15 @@ export const devKits: DevKit[] = [
     github: 'https://github.com/simple-icons/simple-icons',
     category: 'icons',
     tags: ['icons', 'brands', 'svg']
+  },
+  {
+    id: '14',
+    name: 'Flaticon',
+    description: 'La mayor base de datos de iconos gratuitos. Más de 9 millones de iconos en PNG, SVG, EPS, PSD y BASE 64.',
+    logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://www.flaticon.com/favicon.ico',
+    url: 'https://www.flaticon.com/',
+    category: 'icons',
+    tags: ['icons', 'design', 'svg']
   }
 
 
