@@ -108,7 +108,17 @@ export const devKits: DevKit[] = [
       url: 'https://www.weweb.io/',
       category: 'nocode',
       tags: ['no-code', 'app-builder', 'database']
+    },
+    {
+      id: '13',
+      name: 'Apphive',
+      description: 'Crea apps móviles sin código mediante un editor visual fácil de usar.',
+      logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://upload.wikimedia.org/wikipedia/commons/9/9d/Logo_Apphive_Inc.png',
+      url: 'https://apphive.io/',
+      category: 'nocode',
+      tags: ['no-code', 'mobile', 'app-builder']
     }
+
 
     
 
