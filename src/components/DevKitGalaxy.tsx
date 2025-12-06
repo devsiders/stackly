@@ -1,9 +1,10 @@
 import { useState, useMemo, useEffect } from 'react';
 import { Search, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Input } from '@/components/ui/input';
+import { Button } from '@/components/ui/button'; // Asumo que tienes un componente Button, si no, puedes usar un <button> estándar.
 import Header from './Header';
 import CategoryFilter from './CategoryFilter';
-import DevKitCard from './components/DevKitCard';
+import DevKitCard from './DevKitCard';
 import { allDevKits } from '@/data';
 
 const categoryLabels = {
@@ -14,9 +15,13 @@ const categoryLabels = {
   nocode: "No-Code"
 };
 
+const KITS_PER_LOAD = 10; // Constante para la cantidad de kits a mostrar
+
 const DevKitGalaxy = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [activeCategory, setActiveCategory] = useState('all');
+  // 1. Estado para el control de la paginación simple
+  const [visibleKitsCount, setVisibleKitsCount] = useState(KITS_PER_LOAD);
 
   const filteredKits = useMemo(() => {
     const term = searchTerm.toLowerCase();
@@ -29,6 +34,22 @@ const DevKitGalaxy = () => {
       return matchCat && (!term || matchText);
     });
   }, [searchTerm, activeCategory]);
+
+  // 4. Resetear el contador de kits visibles al cambiar filtros/búsqueda
+  useEffect(() => {
+    setVisibleKitsCount(KITS_PER_LOAD);
+  }, [filteredKits]);
+
+  // 5. Determinar qué kits mostrar (el corte/slice)
+  const kitsToShow = filteredKits.slice(0, visibleKitsCount);
+
+  // 2. Función para cargar más kits
+  const showMoreKits = () => {
+    setVisibleKitsCount(prevCount => prevCount + KITS_PER_LOAD);
+  };
+
+  // 6. Verificar si hay más kits por mostrar
+  const hasMoreKits = filteredKits.length > visibleKitsCount;
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
@@ -59,9 +80,10 @@ const DevKitGalaxy = () => {
         </p>
 
         {/* Contenido */}
-        {filteredKits.length ? (
+        {kitsToShow.length ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-            {filteredKits.map((kit) => (
+            {/* Usar kitsToShow en lugar de filteredKits */}
+            {kitsToShow.map((kit) => (
               <DevKitCard key={kit.id + kit.name} kit={kit} />
             ))}
           </div>
@@ -72,6 +94,18 @@ const DevKitGalaxy = () => {
             </div>
             <h3 className="text-xl font-semibold mb-2">No se encontraron resultados</h3>
             <p>Intenta con otros términos o cambia la categoría</p>
+          </div>
+        )}
+
+        {/* 7. Botón "Ver Más" */}
+        {hasMoreKits && (
+          <div className="text-center mt-10">
+            <Button
+              onClick={showMoreKits}
+              className="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-6 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105"
+            >
+              Ver Más ({filteredKits.length - visibleKitsCount} restantes)
+            </Button>
           </div>
         )}
 
