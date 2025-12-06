@@ -1,146 +1,145 @@
-import { useState, useMemo, useEffect } from 'react';
-import { Search, ChevronLeft, ChevronRight } from 'lucide-react';
-import { Input } from '@/components/ui/input';
-import Header from './Header';
-import CategoryFilter from './CategoryFilter';
-import DevKitCard from './DevKitCard';
-import { allDevKits } from '@/data';
+"use client";
 
-const categoryLabels = {
+import React, { useState, useMemo, useEffect } from "react";
+import { Search } from "lucide-react";
+import { DevKit } from "@/types/category";
+
+const itemsPerPage = 8;
+
+const categoryLabels: Record<string, string> = {
+  all: "Todos",
   libraries: "Librerías",
-  icons: "Iconos",
+  icons: "Íconos",
   fonts: "Fuentes",
   tools: "Herramientas",
-  nocode: "No-Code"
+  nocode: "No Code",
 };
 
-const DevKitGalaxy = () => {
-  const [searchTerm, setSearchTerm] = useState('');
-  const [activeCategory, setActiveCategory] = useState('all');
-  const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 8;
+interface Props {
+  kits: DevKit[];
+}
 
+export default function DevKits({ kits }: Props) {
+  const [activeCategory, setActiveCategory] = useState("all");
+  const [searchTerm, setSearchTerm] = useState("");
+  const [visibleCount, setVisibleCount] = useState(itemsPerPage);
+
+  // Filtrar por categoría + búsqueda
   const filteredKits = useMemo(() => {
-    const term = searchTerm.toLowerCase();
-    return allDevKits.filter(kit => {
-      const matchCat = activeCategory === 'all' || kit.category === activeCategory;
-      const matchText =
-        kit.name.toLowerCase().includes(term) ||
-        kit.description.toLowerCase().includes(term) ||
-        kit.tags?.some(tag => tag.toLowerCase().includes(term));
-      return matchCat && (!term || matchText);
+    const search = searchTerm.toLowerCase();
+
+    return kits.filter((kit) => {
+      const matchesCategory =
+        activeCategory === "all" || kit.category === activeCategory;
+
+      const matchesSearch =
+        kit.name.toLowerCase().includes(search) ||
+        kit.description.toLowerCase().includes(search) ||
+        kit.tags.some((t) => t.toLowerCase().includes(search));
+
+      return matchesCategory && matchesSearch;
     });
+  }, [kits, activeCategory, searchTerm]);
+
+  // Slice que muestra solo los visibles
+  const paginatedKits = useMemo(
+    () => filteredKits.slice(0, visibleCount),
+    [filteredKits, visibleCount]
+  );
+
+  // Reiniciar visibleCount cuando cambian filtros o búsqueda
+  useEffect(() => {
+    setVisibleCount(itemsPerPage);
   }, [searchTerm, activeCategory]);
 
-  const totalPages = Math.ceil(filteredKits.length / itemsPerPage);
-
-  const paginatedKits = useMemo(() => {
-    const start = (currentPage - 1) * itemsPerPage;
-    return filteredKits.slice(start, start + itemsPerPage);
-  }, [filteredKits, currentPage]);
-
-  useEffect(() => setCurrentPage(1), [searchTerm, activeCategory]);
-
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
-      <Header />
+    <div className="max-w-7xl mx-auto px-4 py-10">
+      {/* Header */}
+      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-8">
+        <h1 className="text-3xl font-bold">DevKit Resources</h1>
 
-      <main className="container mx-auto px-6 py-12">
         {/* Buscador */}
-        <div className="max-w-md mx-auto mb-8">
-          <div className="relative">
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
-            <Input
-              placeholder="Buscar kits, librerías, iconos..."
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              className="pl-10 py-3 rounded-full border-2 border-gray-200 focus:border-purple-400 transition"
-            />
-          </div>
+        <div className="relative w-full md:w-80">
+          <Search className="absolute left-3 top-2.5 h-5 w-5 text-gray-400" />
+          <input
+            type="text"
+            placeholder="Buscar..."
+            className="w-full pl-10 pr-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
         </div>
+      </div>
 
-        <CategoryFilter activeCategory={activeCategory} onCategoryChange={setActiveCategory} />
+      {/* Categorías */}
+      <div className="flex flex-wrap gap-3 mb-8">
+        {Object.entries(categoryLabels).map(([key, label]) => (
+          <button
+            key={key}
+            onClick={() => setActiveCategory(key)}
+            className={`px-4 py-2 rounded-full border transition ${
+              activeCategory === key
+                ? "bg-purple-600 text-white border-purple-600"
+                : "border-gray-300 text-gray-700 hover:bg-gray-100"
+            }`}
+          >
+            {label}
+          </button>
+        ))}
+      </div>
 
-        {/* Contador */}
-        <p className="text-gray-600">
-          {filteredKits.length} recursos encontrados
-          {activeCategory !== "all" && (
-            <span className="ml-1">en {categoryLabels[activeCategory]}</span>
-          )}
-        </p>
-
-        {/* Contenido */}
-        {filteredKits.length ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-            {paginatedKits.map((kit) => (
-              <DevKitCard key={kit.id + kit.name} kit={kit} />
-            ))}
-          </div>
-        ) : (
-          <div className="text-center py-14 text-gray-600">
-            <div className="w-24 h-24 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Search className="w-12 h-12 text-gray-400" />
-            </div>
-            <h3 className="text-xl font-semibold mb-2">No se encontraron resultados</h3>
-            <p>Intenta con otros términos o cambia la categoría</p>
-          </div>
+      {/* Cantidad encontrada */}
+      <p className="text-gray-600 text-center mb-6">
+        {filteredKits.length} recursos encontrados
+        {activeCategory !== "all" && (
+          <span className="ml-1">en {categoryLabels[activeCategory]}</span>
         )}
+      </p>
 
-        {/* Paginación */}
-        {totalPages > 1 && (
-          <div className="flex flex-col items-center gap-3 mt-10">
+      {/* Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        {paginatedKits.map((kit) => (
+          <a
+            key={kit.id}
+            href={kit.url}
+            target="_blank"
+            className="p-5 border rounded-xl shadow hover:shadow-lg transition bg-white"
+          >
+            {kit.logo && (
+              <img
+                src={kit.logo}
+                alt={kit.name}
+                className="h-12 mx-auto mb-4 object-contain"
+              />
+            )}
+            <h3 className="text-lg font-semibold">{kit.name}</h3>
+            <p className="text-gray-600 text-sm mt-2">{kit.description}</p>
 
-            {/* Flechas */}
-            <div className="flex items-center gap-4">
-              <button
-                onClick={() => setCurrentPage(p => Math.max(p - 1, 1))}
-                disabled={currentPage === 1}
-                className="px-2 py-2 bg-purple-200 text-purple-700 rounded-full disabled:opacity-50"
-              >
-                <ChevronLeft className="w-5 h-5" />
-              </button>
-
-              <span className="text-gray-700 font-medium">
-                {currentPage} de {totalPages}
-              </span>
-
-              <button
-                onClick={() => setCurrentPage(p => Math.min(p + 1, totalPages))}
-                disabled={currentPage === totalPages}
-                className="px-2 py-2 bg-purple-200 text-purple-700 rounded-full disabled:opacity-50"
-              >
-                <ChevronRight className="w-5 h-5" />
-              </button>
-            </div>
-
-            {/* Números */}
-            <div className="flex gap-2 flex-wrap justify-center">
-              {Array.from({ length: totalPages }, (_, i) => i + 1).map(page => (
-                <button
-                  key={page}
-                  onClick={() => setCurrentPage(page)}
-                  className={`px-3 py-1 rounded-full text-sm transition ${
-                    currentPage === page
-                      ? "bg-purple-600 text-white"
-                      : "bg-purple-200 text-purple-700 hover:bg-purple-300"
-                  }`}
+            <div className="flex flex-wrap gap-2 mt-4">
+              {kit.tags.map((tag) => (
+                <span
+                  key={tag}
+                  className="text-xs bg-gray-200 px-2 py-1 rounded-full"
                 >
-                  {page}
-                </button>
+                  {tag}
+                </span>
               ))}
             </div>
+          </a>
+        ))}
+      </div>
 
-          </div>
-        )}
-      </main>
-
-      <footer className="bg-gray-900 text-white py-8 mt-16">
-        <div className="container mx-auto px-6 text-center">
-          <p className="text-gray-400">Hecho con ❤️ para la comunidad</p>
+      {/* Botón Ver más */}
+      {visibleCount < filteredKits.length && (
+        <div className="flex justify-center mt-10">
+          <button
+            onClick={() => setVisibleCount((prev) => prev + itemsPerPage)}
+            className="px-6 py-3 bg-purple-600 text-white rounded-full shadow hover:bg-purple-700 transition"
+          >
+            Ver más
+          </button>
         </div>
-      </footer>
+      )}
     </div>
   );
-};
-
-export default DevKitGalaxy;
+}
