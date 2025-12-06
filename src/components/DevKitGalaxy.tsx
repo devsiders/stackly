@@ -3,7 +3,7 @@ import { Search, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import Header from './Header';
 import CategoryFilter from './CategoryFilter';
-import DevKitCard from './DevKitCard';
+import DevKitCard from './components/DevKitCard';
 import { allDevKits } from '@/data';
 
 const categoryLabels = {
