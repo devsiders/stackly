@@ -117,7 +117,35 @@ export const devKits: DevKit[] = [
       url: 'https://apphive.io/',
       category: 'nocode',
       tags: ['no-code', 'mobile', 'app-builder']
+    },
+    {
+      id: '14',
+      name: 'Notion',
+      description: 'Plataforma todo-en-uno para organizar notas, documentos, tareas y bases de datos.',
+      logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png',
+      url: 'https://notion.com/',
+      category: 'nocode',
+      tags: [ 'notes', 'docs', 'database']
+    },
+    {
+      id: '15',
+      name: 'Airtable',
+      description: 'Crea apps internas sin código con una base de datos estilo hoja de cálculo y automatiza procesos.',
+      logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://images.seeklogo.com/logo-png/29/1/airtable-logo-png_seeklogo-294322.png',
+      url: 'https://www.airtable.com/',
+      category: 'nocode',
+      tags: [ 'database', 'automation', 'internal-apps']
+    },
+    {
+      id: '16',
+      name: 'Xano',
+      description: 'Crea backends completos sin código con bases de datos, APIs, autenticación y lógica de negocio.',
+      logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://www.xano.com/favicon.ico',
+      url: 'https://www.xano.com/',
+      category: 'nocode',
+      tags: ['backend', 'api', 'no-code']
     }
+
 
 
     
