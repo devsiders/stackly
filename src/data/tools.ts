@@ -226,15 +226,6 @@ export const devKits: DevKit[] = [
   },
   {
     id: '26',
-    name: 'Notion',
-    description: 'Herramienta todo-en-uno para organizar notas, documentos, tareas y bases de datos.',
-    logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png',
-    url: 'https://notion.com/',
-    category: 'tools',
-    tags: [ 'notes', 'docs', 'productivity']
-  },
-  {
-    id: '27',
     name: 'Canva',
     description: 'Herramienta para crear diseños, presentaciones y contenido profesional fácilmente.',
     logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://canva.com/favicon.ico',
@@ -243,7 +234,7 @@ export const devKits: DevKit[] = [
     tags: ['design', 'templates', 'drag-drop']
   },
   {
-    id: '28',
+    id: '27',
     name: 'CodeSandbox',
     description: 'Herramienta online para crear y compartir entornos de desarrollo.',
     logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://codesandbox.io/favicon.ico',
@@ -253,7 +244,7 @@ export const devKits: DevKit[] = [
     tags: ['playground', 'web-development', 'editor']
   },
   {
-    id: '29',
+    id: '28',
     name: 'CodePen',
     description: 'Editor online para crear, probar y mostrar código front-end.',
     logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://codepen.io/favicon.ico',
@@ -262,7 +253,7 @@ export const devKits: DevKit[] = [
     tags: ['playground', 'frontend', 'editor']
   },
   {
-    id: '30',
+    id: '29',
     name: 'W3C Markup Validator',
     description: 'Herramienta oficial para validar código HTML y XHTML.',
     logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://validator.w3.org/favicon.ico',
@@ -271,7 +262,7 @@ export const devKits: DevKit[] = [
     tags: ['validator', 'html', 'web-development']
   },
   {
-    id: '31',
+    id: '30',
     name: 'Animista',
     description: 'Generador online de animaciones CSS personalizadas.',
     logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://animista.net/favicon.ico',
@@ -280,7 +271,7 @@ export const devKits: DevKit[] = [
     tags: ['css', 'animations', 'generator']
   },
   {
-    id: '32',
+    id: '31',
     name: 'LottieFiles',
     description: 'Plataforma para animaciones Lottie listas para usar.',
     logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://lottiefiles.com/favicon.ico',
