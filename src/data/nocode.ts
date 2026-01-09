@@ -144,6 +144,15 @@ export const devKits: DevKit[] = [
       url: 'https://www.xano.com/',
       category: 'nocode',
       tags: ['backend', 'api', 'no-code']
+    },
+    {
+      id: '17',
+      name: 'Power Apps',
+      description: 'Crea aplicaciones rápidamente con integración a servicios de Azure.',
+      logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://azure.microsoft.com/svghandler/powerapps?width=100&height=100',
+      url: 'https://powerapps.microsoft.com/',
+      category: 'nocode',
+      tags: ['no-code', 'app-builder', 'azure']
     }
 
 
