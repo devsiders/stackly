@@ -278,7 +278,78 @@ export const devKits: DevKit[] = [
     url: 'https://lottiefiles.com/',
     category: 'tools',
     tags: ['lottie', 'animations', 'design']
+  },
+  {
+    id: '32',
+    name: 'Haikei',
+    description: 'Generador de fondos y formas SVG para diseño web moderno.',
+    logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://haikei.app/favicon.ico',
+    url: 'https://haikei.app/',
+    category: 'tools',
+    tags: ['svg', 'backgrounds', 'generator']
+  },
+  {
+    id: '33',
+    name: 'Shots',
+    description: 'Creador de mockups profesionales para mostrar tus diseños.',
+    logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://shots.so/image/shots-logo.png',
+    url: 'https://shots.so/',
+    category: 'tools',
+    tags: ['mockup', 'design', 'presentation']
+  },
+  {
+    id: '34',
+    name: 'Spline',
+    description: 'Herramienta para crear modelos 3D interactivos para la web.',
+    url: 'https://spline.design/',
+    category: 'tools',
+    tags: ['3d', 'web', 'interactive']
+  },
+  {
+    id: '35',
+    name: 'GitHub',
+    description: 'Plataforma de alojamiento de repositorios de Git basada en la nube para gestionar y colaborar proyectos.',
+    logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://azure.microsoft.com/svghandler/github?width=100&height=100',
+    url: 'https://github.com/',
+    category: 'tools',
+    tags: ['git', 'repository', 'ci/cd']
+  },
+  {
+    id: '36',
+    name: 'Visual Studio Code',
+    description: 'Editor de código ligero para escribir, depurar e implementar aplicaciones.',
+    logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://azure.microsoft.com/svghandler/visual-studio-code?width=100&height=100',
+    url: 'https://code.visualstudio.com/',
+    category: 'tools',
+    tags: ['editor', 'code', 'ide']
+  },
+  {
+    id: '37',
+    name: 'Sublime Text',
+    description: 'Editor de texto rápido y flexible para escribir y editar código en múltiples lenguajes.',
+    logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://www.sublimetext.com/favicon.ico',
+    url: 'https://www.sublimetext.com/',
+    category: 'tools',
+    tags: ['editor', 'text-editor', 'code']
+  },
+  {
+    id: '38',
+    name: 'Marvel',
+    description: 'Herramienta de wireframing y prototipado colaborativo basada en la web.',
+    url: 'https://marvelapp.com/',
+    category: 'tools',
+    tags: ['prototyping', 'design', 'collaboration']
+  },
+  {
+    id: '39',
+    name: 'Postman',
+    description: 'Herramienta para pruebas de API, documentación y colaboración de equipo.',
+    logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://voyager.postman.com/logo/postman-logo-icon-orange.svg',
+    url: 'https://www.postman.com/',
+    category: 'tools',
+    tags: ['api', 'testing', 'collaboration']
   }
+
 
 
 
