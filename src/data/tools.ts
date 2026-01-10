@@ -301,6 +301,7 @@ export const devKits: DevKit[] = [
     id: '34',
     name: 'Spline',
     description: 'Herramienta para crear modelos 3D interactivos para la web.',
+    logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://spline.design/_assets/_images/icon_favicon32x32.png',
     url: 'https://spline.design/',
     category: 'tools',
     tags: ['3d', 'web', 'interactive']
