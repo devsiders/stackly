@@ -349,6 +349,15 @@ export const devKits: DevKit[] = [
     url: 'https://www.postman.com/',
     category: 'tools',
     tags: ['api', 'testing', 'collaboration']
+  },
+  {
+    id: '40',
+    name: 'Logo Maker',
+    description: 'Herramienta online para generar y personalizar logotipos rápidamente con IA.',
+    logo: 'https://res.cloudinary.com/daxzhb62n/image/fetch/f_auto,q_auto,w_100/https://logo.com/favicon.ico',
+    url: 'https://logo.com/',
+    category: 'tools',
+    tags: ['generator', 'branding', 'ai', 'design']
   }
 
 
