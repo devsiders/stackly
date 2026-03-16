@@ -358,6 +358,14 @@ export const devKits: DevKit[] = [
     url: 'https://logo.com/',
     category: 'tools',
     tags: ['generator', 'branding', 'ai', 'design']
+  },
+  {
+    id: '41',
+    name: '2img',
+    description: 'Herramienta online para convertir y editar imágenes: redimensiona, recorta, ajusta colores sin subir tus archivos.',
+    url: 'https://2img.com/',
+    category: 'tools',
+    tags: ['image', 'converter', 'image-editing']
   }
 
 
