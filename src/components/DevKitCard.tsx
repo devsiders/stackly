@@ -9,7 +9,7 @@ interface DevKitCardProps {
 
 const DevKitCard = ({ kit }: DevKitCardProps) => {
   return (
-    <Card className="p-6 card-glow hover:border-purple-300 transition-all duration-300 group">
+    <Card className="p-6 card-glow hover:border-purple-300 transition-all duration-300 group h-full min-h-[180px] flex flex-col">
       <div className="flex items-start gap-4">
         <div className="flex-shrink-0">
           <div className="w-16 h-16 rounded-lg overflow-hidden bg-gray-50 flex items-center justify-center p-2">
