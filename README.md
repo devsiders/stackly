@@ -13,7 +13,7 @@
 
 ---
 
-<img width="1366" height="1568" alt="image" src="https://github.com/user-attachments/assets/cc89bee1-52ee-4a5c-9f45-1de886b74be3" />
+<img width="1366" height="1778" alt="image" src="https://github.com/user-attachments/assets/3c6ac447-3ff9-4706-9d32-f416f12a6676" />
 
 
 ## ¿Qué es Stackly?
